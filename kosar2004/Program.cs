@@ -112,6 +112,16 @@ namespace kosar2004
                 }
             }
         }
+        static void nyolcadik()
+        {
+            StreamWriter ir = new StreamWriter("meccsek.txt");
+            foreach (var i in meccsek)
+            {
+                ir.WriteLine(i.kiir());
+            }
+
+            ir.Close();
+        }
         static void Main(string[] args)
         {
             
@@ -123,6 +133,7 @@ namespace kosar2004
             otodik();
             hatodik();
             hetedik();
+            nyolcadik();
             Console.ReadKey();
         }
     }

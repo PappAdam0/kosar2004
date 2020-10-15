@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace kosar2004
 {
@@ -26,6 +27,11 @@ namespace kosar2004
             Hely = adatok[4];
             Ido = adatok[5];
 
+        }
+
+        public string kiir()
+        {
+            return $"{Hazai} - {Idegen} ({HPont}:{IPont})";
         }
     }
 }
