@@ -11,7 +11,9 @@ namespace kosar2004
     {
         static void Main(string[] args)
         {
-
+            
+            var h = new Meccs("7up Joventut", "Adecco Estudiantes", 81, 73, "Palacio Mun. De Deportes De Badalona", "2005 - 04 - 03");
+            Console.WriteLine($"{h.Hazai} - {h.Idegen} {h.HPont}:{h.IPont}");
             Console.ReadKey();
         }
     }
